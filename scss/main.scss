@@ -5,7 +5,7 @@
 }
 
 $bg-color: #2e86de;
-$text-color: white;
+$text-color: rgb(152, 228, 30);
 $message-color: rgb(165, 231, 59);
 
 @mixin flexproperties {
@@ -16,17 +16,19 @@ $message-color: rgb(165, 231, 59);
   place-items: center;
 }
 
-@mixin identicaltextformat {
+@mixin identicaltextformat($par1, $font, $cap) {
   background-color: $bg-color;
-  font-size: 5rem+5rem;
+  font-size: $font;
   color: $text-color;
-  letter-spacing: 0.3rem;
+  letter-spacing: $par1;
+  text-transform: $cap;
 }
 
 //1.operators
 //2.variables
 //3.nesting
 //4. mixing
+//5.parameter
 
 .main_header {
   width: 100vw;
@@ -34,10 +36,10 @@ $message-color: rgb(165, 231, 59);
   background-color: $bg-color;
   @include flexproperties;
   h1 {
-    @include identicaltextformat;
+    @include identicaltextformat(2rem, 7rem, capitalize);
 
     &:hover {
-      background-color: rgb(165, 231, 59);
+      background-color: rgb(231, 59, 59);
     }
     &::after {
       content: "World";
@@ -45,7 +47,7 @@ $message-color: rgb(165, 231, 59);
   }
 
   p {
-    @include identicaltextformat;
+    @include identicaltextformat(0.1rem, 5rem, lowercase);
 
     &:hover {
       background-color: rgb(231, 199, 59);

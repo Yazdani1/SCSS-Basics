@@ -27,13 +27,14 @@
 
 .main_header h1 {
   background-color: #2e86de;
-  font-size: 10rem;
-  color: white;
-  letter-spacing: 0.3rem;
+  font-size: 7rem;
+  color: #98e41e;
+  letter-spacing: 2rem;
+  text-transform: capitalize;
 }
 
 .main_header h1:hover {
-  background-color: #a5e73b;
+  background-color: #e73b3b;
 }
 
 .main_header h1::after {
@@ -42,9 +43,10 @@
 
 .main_header p {
   background-color: #2e86de;
-  font-size: 10rem;
-  color: white;
-  letter-spacing: 0.3rem;
+  font-size: 5rem;
+  color: #98e41e;
+  letter-spacing: 0.1rem;
+  text-transform: lowercase;
 }
 
 .main_header p:hover {
