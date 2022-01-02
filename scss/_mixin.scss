@@ -14,8 +14,8 @@
   text-transform: $cap;
 }
 
-@mixin circle-items {
-    height: 100px;
+@mixin circle-items($hei) {
+    height: $hei;
     width: 100px;
 }
 
