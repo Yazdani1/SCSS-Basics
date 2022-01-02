@@ -1,0 +1,15 @@
+@mixin flexproperties {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+@mixin identicaltextformat($par1, $font, $cap) {
+  background-color: $bg-color;
+  font-size: $font;
+  color: $text-color;
+  letter-spacing: $par1;
+  text-transform: $cap;
+}

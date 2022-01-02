@@ -1,27 +1,10 @@
+@import "mixin";
+@import "var";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-$bg-color: #2e86de;
-$text-color: rgb(152, 228, 30);
-$message-color: rgb(165, 231, 59);
-
-@mixin flexproperties {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-}
-
-@mixin identicaltextformat($par1, $font, $cap) {
-  background-color: $bg-color;
-  font-size: $font;
-  color: $text-color;
-  letter-spacing: $par1;
-  text-transform: $cap;
 }
 
 //1.operators
@@ -29,6 +12,7 @@ $message-color: rgb(165, 231, 59);
 //3.nesting
 //4. mixing
 //5.parameter
+//6.partials
 
 .main_header {
   width: 100vw;
@@ -39,7 +23,7 @@ $message-color: rgb(165, 231, 59);
     @include identicaltextformat(2rem, 7rem, capitalize);
 
     &:hover {
-      background-color: rgb(231, 59, 59);
+      background-color: rgb(12, 83, 131);
     }
     &::after {
       content: "World";

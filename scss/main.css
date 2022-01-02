@@ -8,7 +8,7 @@
 .main_header {
   width: 100vw;
   height: 100vh;
-  background-color: #2e86de;
+  background-color: #d82ede;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -26,15 +26,15 @@
 }
 
 .main_header h1 {
-  background-color: #2e86de;
+  background-color: #d82ede;
   font-size: 7rem;
-  color: #98e41e;
+  color: #17ee58;
   letter-spacing: 2rem;
   text-transform: capitalize;
 }
 
 .main_header h1:hover {
-  background-color: #e73b3b;
+  background-color: #0c5383;
 }
 
 .main_header h1::after {
@@ -42,9 +42,9 @@
 }
 
 .main_header p {
-  background-color: #2e86de;
+  background-color: #d82ede;
   font-size: 5rem;
-  color: #98e41e;
+  color: #17ee58;
   letter-spacing: 0.1rem;
   text-transform: lowercase;
 }
