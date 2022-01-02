@@ -13,3 +13,10 @@
   letter-spacing: $par1;
   text-transform: $cap;
 }
+
+@mixin circle-items {
+    height: 100px;
+    width: 100px;
+}
+
+
