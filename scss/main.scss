@@ -4,25 +4,51 @@
   box-sizing: border-box;
 }
 
-
 $bg-color: #2e86de;
+$text-color: white;
+$message-color: rgb(165, 231, 59);
 
+@mixin flexproperties {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+@mixin identicaltextformat {
+  background-color: $bg-color;
+  font-size: 5rem+5rem;
+  color: $text-color;
+  letter-spacing: 0.3rem;
+}
 
 //1.operators
 //2.variables
 //3.nesting
+//4. mixing
 
 .main_header {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
   background-color: $bg-color;
-  text-align: center;
-}
+  @include flexproperties;
+  h1 {
+    @include identicaltextformat;
 
-h1 {
-  background-color: $bg-color;
-  font-size: 5rem+5rem;
+    &:hover {
+      background-color: rgb(165, 231, 59);
+    }
+    &::after {
+      content: "World";
+    }
+  }
+
+  p {
+    @include identicaltextformat;
+
+    &:hover {
+      background-color: rgb(231, 199, 59);
+    }
+  }
 }

@@ -8,6 +8,13 @@
 .main_header {
   width: 100vw;
   height: 100vh;
+  background-color: #2e86de;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,12 +23,31 @@
       -ms-flex-direction: column;
           flex-direction: column;
   place-items: center;
-  background-color: #2e86de;
-  text-align: center;
 }
 
-h1 {
+.main_header h1 {
   background-color: #2e86de;
   font-size: 10rem;
+  color: white;
+  letter-spacing: 0.3rem;
+}
+
+.main_header h1:hover {
+  background-color: #a5e73b;
+}
+
+.main_header h1::after {
+  content: "World";
+}
+
+.main_header p {
+  background-color: #2e86de;
+  font-size: 10rem;
+  color: white;
+  letter-spacing: 0.3rem;
+}
+
+.main_header p:hover {
+  background-color: #e7c73b;
 }
 /*# sourceMappingURL=main.css.map */
