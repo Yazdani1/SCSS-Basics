@@ -38,3 +38,32 @@
     }
   }
 }
+
+
+.container-items{
+
+    height: 30vh;
+    width: 100vw;
+    background-color: wheat;
+    display: flex;
+    .circle-items{
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: yellow;
+        color: rgb(10, 10, 10);
+        border-radius: 90px;
+        p{
+            @include flexproperties;
+            height: 100px;
+            width: 100px;
+        }
+        &:hover{
+            background-color: yellowgreen;
+            cursor: pointer;
+        }
+    }
+
+}
+
+
